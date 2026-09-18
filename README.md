@@ -83,4 +83,31 @@ After this, the script will find the profile and use it.
 ✅ NetworkManager is running.
 🔍 Scanning for broadcasted SSID: Livebox-1234 ...
 ✅ SSID is broadcasted: Livebox-1234
-✅ Profile
+✅ Profile exists: Livebox-1234
+🔌 Connecting to Livebox-1234 ...
+✅ Connected to Livebox-1234
+🏁 Done!
+```
+
+## Troubleshooting
+
+- **“NetworkManager is not running”**  
+  Ensure the service is enabled:  
+  ```bash
+  sudo systemctl enable NetworkManager
+  sudo systemctl start NetworkManager
+  ```
+
+- **“Scanning not allowed while unavailable”**  
+  This can happen right after starting NM. The script waits for NM to become active; if it persists, reboot the Pi or check that the Wi‑Fi device is up (`ip link`, `iw dev`).
+
+- **SSID not found**  
+  Confirm the AP is broadcasting and that your Pi’s Wi‑Fi supports the band (2.4 GHz vs 5 GHz).
+
+## License
+
+This project is provided as‑is. You may use and modify it freely.
+
+## Author
+
+Pascal (adapted for Raspberry Pi on Debian Trixie).
