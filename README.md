@@ -30,13 +30,13 @@ A robust Bash script to connect to a Wi‑Fi network on Raspberry Pi (Debian Tri
 2. Make the script executable:
 
    ```bash
-   chmod +x connect_wifi_d330.sh
+   chmod +x connect_wifi_profile.sh
    ```
 
 3. (Optional) Move it to a directory in your PATH:
 
    ```bash
-   sudo mv connect_wifi_d330.sh /usr/local/bin/connect-wifi
+   sudo mv connect_wifi_profile.sh /usr/local/bin/connect-wifi
    sudo chmod +x /usr/local/bin/connect-wifi
    ```
 
@@ -51,7 +51,7 @@ ssid="Livebox-1234"
 Then run:
 
 ```bash
-sudo ./connect_wifi_d330.sh
+sudo ./connect_wifi_profile.sh
 # or, if installed in PATH:
 sudo connect-wifi
 ```
