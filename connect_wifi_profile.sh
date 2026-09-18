@@ -15,12 +15,12 @@
 #               NetworkManager + nmcli
 #
 # Usage:
-#   sudo ./connect_wifi_profile.sh --ssid "Livebox-D330"
+#   sudo ./connect_wifi_profile.sh --ssid "Livebox-1234"
 #   sudo ./connect_wifi_profile.sh --ssid "iPhone P"
 #
 # wifi_profiles.ini:
 #
-#   [Livebox-D330]
+#   [Livebox-1234]
 #   password=your_password
 #
 #   [iPhone P]
@@ -54,7 +54,7 @@ Options:
   -h, --help       Show this help
 
 Examples:
-  sudo $0 --ssid "Livebox-D330"
+  sudo $0 --ssid "Livebox-1234"
   sudo $0 --ssid "iPhone P"
 EOF
 }
